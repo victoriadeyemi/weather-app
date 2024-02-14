@@ -50,13 +50,13 @@ function currentWeather(lat, lon){
 }
 
 
-// function fiveDayForecast(lat, lon){
-//     var fiveDayForecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`
-//     fetch(fiveDayForecastUrl)
-//     .then(function(response){
-//         return response.json();
-//     })
-//     .then(function(data){
-//         console.log(data)
-//     })
-// }
+function fiveDayForecast(lat, lon){
+    var fiveDayForecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`
+    fetch(fiveDayForecastUrl)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(data){
+        console.log(data)
+    })
+}
