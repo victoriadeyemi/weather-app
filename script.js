@@ -14,20 +14,20 @@ searchForm.addEventListener("submit", function (event) {
     geoCode(city);
 })
 
-// function geoCode(city) {
-//     var geoCodeUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${apiKey}`
-//     fetch(geoCodeUrl)
-//         .then(function (response) {
-//             return response.json();
-//         })
-//         .then(function (data) {
-//             console.log(data)
-//             var lat = data[0].lat;
-//             var lon = data[0].lon;
-//             currentWeather(lat, lon);
-//             fiveDayForecast(lat, lon);
-//         })
-// }
+function geoCode(city) {
+    var geoCodeUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${apiKey}`
+    fetch(geoCodeUrl)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            console.log(data)
+            var lat = data[0].lat;
+            var lon = data[0].lon;
+            currentWeather(lat, lon);
+            fiveDayForecast(lat, lon);
+        })
+}
 
 // function currentWeather(lat, lon){
 //     var currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`
