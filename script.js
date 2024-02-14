@@ -6,13 +6,13 @@ var searchInput = document.querySelector("#search-input");
 var searchBtn = document.querySelector("#search-button");
 var searchForm = document.querySelector("#search-form");
 
-// searchForm.addEventListener("submit", function (event) {
-//     event.preventDefault();
-//     var city = searchInput.value
+searchForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    var city = searchInput.value
 
-//     console.log(city);
-//     geoCode(city);
-// })
+    console.log(city);
+    geoCode(city);
+})
 
 // function geoCode(city) {
 //     var geoCodeUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${apiKey}`
