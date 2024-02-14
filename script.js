@@ -29,25 +29,25 @@ function geoCode(city) {
         })
 }
 
-// function currentWeather(lat, lon){
-//     var currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`
-//     fetch(currentWeatherUrl)
-//     .then(function(response){
-//         return response.json();
-//     })
-//     .then(function(data){
-//         console.log(data)
-//     var name = document.createElement("h2");
-//     name.textContent = data.name;
-//     var temp = document.createElement("p");
-//     temp.textContent = "Temperature: "+data.main.temp;
+function currentWeather(lat, lon){
+    var currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`
+    fetch(currentWeatherUrl)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(data){
+        console.log(data)
+    var name = document.createElement("h2");
+    name.textContent = data.name;
+    var temp = document.createElement("p");
+    temp.textContent = "Temperature: "+data.main.temp;
 
 
 
 
-//     todayDiv.append(name, temp)
-//     })
-// }
+    todayDiv.append(name, temp)
+    })
+}
 
 
 // function fiveDayForecast(lat, lon){
