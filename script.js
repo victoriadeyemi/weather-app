@@ -5,6 +5,7 @@ var forecastDiv = document.querySelector("#forecast");
 var searchInput = document.querySelector("#search-input");
 var searchBtn = document.querySelector("#search-button");
 var searchForm = document.querySelector("#search-form");
+
 // searchForm.addEventListener("submit", function (event) {
 //     event.preventDefault();
 //     var city = searchInput.value
