@@ -1,11 +1,7 @@
 # weather-app
-Weather dashboard created with html, CSS and javaScript
-
-
-# Team-profile-generator
 
 ## Description
-Team Profile Generator Application made with javaScript.
+Weather dashboard created with html, CSS and javaScript.
 This application will take in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. This application enables a manager as a user to generate a webpage that displays their team's basic info so that they have quick access to their emails and GitHub profiles.
 
 
@@ -42,7 +38,7 @@ Use the npm test command in the terminal to run tests.
 ## Questions
 If you have questions about this repository or application, you can email me at <a href="mailto:victoriadeyemi1038@gmail.com">victoriadeyemi1038@gmail.com</a>  or visit my GitHub page at [victoriadeyemi](https://github.com/victoriadeyemi)
 
-## Generated Team Profile
+## Deployed Application
 ![Here is a screenshot of the team profile HTML generated using this application](./assets/images/team-profile-generator-output-html.png)
 
 ## License
